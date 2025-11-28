@@ -103,11 +103,7 @@ const validarDatosReserva = (body: any) => {
   return errores;
 };
 
-/**
- * Chequea si existe solapamiento con otra reserva
- * de la misma sala y fecha. Si ignoreId está definido,
- * esa reserva se ignora (para el caso de edición).
- */
+
 const existeSolapamiento = async (params: {
   sala: "A" | "B";
   date: string;
