@@ -30,14 +30,3 @@ app.listen(PORT, () => {
   console.log(`Servidor escuchando en http://localhost:${PORT}`);
 });
 
-(async () => {
-  await enviarMailNuevaReserva({
-    sala: "A",
-    date: "2025-12-01",
-    start: "10:00",
-    end: "11:00",
-    persona: "Prueba Localhost",
-    area: "Sistemas",
-    motivo: "Test de correo",
-  });
-})();
